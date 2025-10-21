@@ -1,10 +1,13 @@
 #!/bin/bash
-EXPECTED="Hello, Test!"
-OUTPUT=$(node -e "console.log(require('./src/app.js')('Test'));")
-if [ "$OUTPUT" = "$EXPECTED" ]; then
-    echo "✅ Test passed!"
-    exit 0
-else
-    echo "❌ Test failed! Expected '$EXPECTED' but got '$OUTPUT'"
-    exit 1
-fi
+const greet = require('./app');
+
+const expected = "Hello, Test!";
+const output = greet("Test");
+
+if (output === expected) {
+  console.log("✅ Test passed!");
+  process.exit(0);
+} else {
+  console.error(`❌ Test failed! Expected '${expected}' but got '${output}'`);
+  process.exit(1);
+}
