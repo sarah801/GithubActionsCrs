@@ -4,9 +4,8 @@
         "version": "1.0.0",
         "main": "app.js",
         "scripts": {
-            "test": "node ./src/test.js"
+            "test": "node ./s/test.js"
         },
         "dependencies": {}
     
-
-}
+    }
