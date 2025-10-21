@@ -5,10 +5,10 @@ on:
             - 'releases/**'
         paths: 
             - 'src/**' 
-        pull_request: 
-            branches: 
-                - main
-                - 'releases/**'
+    pull_request: 
+        branches: 
+            - main
+            - 'releases/**'
 jobs: 
      test: 
         runs-on: ubuntu-latest 

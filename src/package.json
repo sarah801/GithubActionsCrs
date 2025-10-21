@@ -1,10 +1,12 @@
 {
-    name: "greet-app",
-    version: "1.0.0",
-    main: "app.js",
-    scripts: {
-        test: "bash /src/test.sh"
-    },
-    dependencies: {},
     
+        "name": "greet-app",
+        "version": "1.0.0",
+        "main": "app.js",
+        "scripts": {
+            "test": "bash /src/test.sh"
+        },
+        "dependencies": {}
+    
+
 }
